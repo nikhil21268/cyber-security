@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+// The timestamp service definition.
+service TimestampService {
+  // Sends a document to the server and receives a timestamp and signature.
+  rpc StampDocument (DocumentRequest) returns (DocumentResponse) {}
+}
+
+// The request message containing the document.
+message DocumentRequest {
+  string document_content = 1;
+}
+
+// The response message containing the timestamp and signature.
+message DocumentResponse {
+  string timestamp = 1;
+  string signature = 2;
+}
+
+service PublicKeyService {
+  rpc GetServerPublicKey (Empty) returns (PublicKeyResponse) {}
+}
+
+message Empty {}
+
+message PublicKeyResponse {
+  string public_key = 1;
+}

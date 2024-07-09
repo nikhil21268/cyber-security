@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+service VerificationService {
+  rpc VerifyDocument (VerificationRequest) returns (VerificationResponse) {}
+}
+
+// message VerificationRequest {
+//   string document_hash = 1;
+//   string timestamp = 2;
+//   string signature = 3;
+// }
+
+message VerificationRequest {
+  bytes document_data = 1;
+  string file_type = 2;
+  string timestamp = 3;
+  string signature = 4;
+}
+
+message VerificationResponse {
+  bool is_verified = 1;
+  string message = 2;
+}
