@@ -1,7 +1,3 @@
-# cyber-security
-
-This repo contains data pertaining to all my Network Security mini-projects.
-
 # README for Mini-Projects in Cryptography and Security
 
 ## Project 1: Mono-Alphabetic Substitution Cipher
