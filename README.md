@@ -1,4 +1,4 @@
-# README for Mini-Projects in Cryptography and Security
+# README for Projects in Cryptography and Security
 
 ## Project 1: Mono-Alphabetic Substitution Cipher
 **Objective**: Develop an encryption and decryption mechanism using a mono-alphabetic substitution of character pairs. Brute-force attacks are employed to deduce the encryption key.
